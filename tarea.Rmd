@@ -1,0 +1,19 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 02/02/2024
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(leaflet)
+library(dplyr)
+
+leaflet()%>% 
+        addTiles()%>% 
+        setView(-74.297333, 4.570868, zoom = 10)
+
+```
